@@ -1,19 +1,10 @@
-import { Footer } from "./components/Footer"
-import { Header } from "./components/Header"
-
-
-
+import { RouterProvider } from 'react-router-dom'
+import { router } from './routes'
 
 function App() {
-
-
   return (
     <>
-      <Header/>
-      <div className="h-96">
-        <p>test</p>
-      </div>
-      <Footer/>
+      <RouterProvider router={router} />
     </>
   )
 }
