@@ -6,7 +6,7 @@ export function HomeLayout() {
   return (
     <>
       <Header />
-      <div className='flex flex-1 flex-col gap-4 bg-muted/30 p-8 pt-20'>
+      <div className='flex flex-1 flex-col bg-muted/30 p-8 pt-24'>
         <Outlet />
       </div>
       <Footer />

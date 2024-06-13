@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/Input'
 import { Label } from '@/components/ui/Label'
 import { ArrowLeft } from 'lucide-react'
 
-export function Login() {
+export function Register() {
   return (
     <>
       <div className='p-8'>
@@ -17,18 +17,23 @@ export function Login() {
             </Link>
           </Button>
           <Button variant='link' asChild className='absolute right-8 top-8'>
-            <Link to='/register'>Registre-se</Link>
+            <Link to='/login'>Login</Link>
           </Button>
         </div>
 
         <div className='flex w-[350px] flex-col justify-center gap-6'>
           <div className='flex flex-col gap-2 text-center'>
-          <img className="w-[12rem]" src={ImgLogo} alt="" />
-            <h1 className='text-2xl font-semibold tracking-tight'>Acessar sua conta</h1>
-            <p className='text-sm text-muted-foreground'>Gerencie seu deck e faça suas trocas</p>
+            <img className="w-[12rem]" src={ImgLogo} alt="" />
+            <h1 className='text-2xl font-semibold tracking-tight'>Crie sua conta</h1>
+            <p className='text-sm text-muted-foreground'>Registre-se e comece a montar o seu deck</p>
           </div>
 
           <form>
+            <div className='space-y-2'>
+              <Label htmlFor='name'>Seu nome</Label>
+              <Input id='name' type='name' />
+            </div>
+
             <div className='space-y-2'>
               <Label htmlFor='email'>E-mail</Label>
               <Input id='email' type='email' placeholder='Seu e-mail' />
