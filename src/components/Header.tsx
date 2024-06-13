@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button } from './ui/Button'
 
 export function Header() {
@@ -23,11 +24,11 @@ export function Header() {
         <div className='flex items-center gap-3'>
           <div className='flex items-center gap-1'>
             <Button variant={'link'} className='p-0 text-secondary'>
-              Entrar
+              <Link to='/login'>Login</Link>
             </Button>
             <span className='text-secondary'>{' / '}</span>
             <Button variant={'link'} className='p-0 text-secondary'>
-              Criar conta
+              <Link to='/register'>Registre-se</Link>
             </Button>
           </div>
         </div>
