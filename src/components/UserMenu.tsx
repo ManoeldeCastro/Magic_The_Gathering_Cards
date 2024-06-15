@@ -1,4 +1,4 @@
-import { CircleUserRound, LogOut, SquareUser, User } from 'lucide-react'
+import { CircleUserRound, LogOut, SquareUser } from 'lucide-react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 

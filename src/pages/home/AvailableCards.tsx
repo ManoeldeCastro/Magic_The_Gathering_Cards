@@ -1,4 +1,4 @@
-import { SetStateAction, useContext, useState } from 'react'
+import { useContext, useState } from 'react'
 
 import { toast } from 'react-hot-toast'
 
