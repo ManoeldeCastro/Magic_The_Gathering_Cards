@@ -5,6 +5,10 @@ import { Main } from './pages/home/Main'
 import { AuthenticationLayout } from './pages/layouts/Authentication'
 import { Login } from './pages/auth/Login'
 import { Register } from './pages/auth/Register'
+import { TradeRequestForm } from './pages/home/TradeRequestForm'
+import { TradeCenter } from './pages/home/TradeCenter'
+import { UserProfile } from './pages/home/UserProfile'
+import { AvailableCards } from './pages/home/AvailableCards'
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +19,22 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Main />
+      },
+      {
+        path: '/user-profile',
+        element: <UserProfile />
+      },
+      {
+        path: '/trade-request',
+        element: <TradeRequestForm />
+      },
+      {
+        path: '/available-cards',
+        element: <AvailableCards />
+      },
+      {
+        path: '/trade-center',
+        element: <TradeCenter />
       }
     ]
   },
@@ -24,12 +44,12 @@ export const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       {
-        path: '/login',
+        path: 'login',
         element: <Login />
       },
       {
-        path: '/register',
-        element: <Register/>
+        path: 'register',
+        element: <Register />
       }
     ]
   }

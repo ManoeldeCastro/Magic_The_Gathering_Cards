@@ -76,3 +76,14 @@
     @apply bg-background text-foreground;
   }
 }
+.magic-card-container {
+  transition: transform 0.2s ease-in-out;
+}
+
+.magic-card-container:hover .magic-card {
+  transform: translateY(-10px);
+}
+
+.magic-card-container:hover ~ .magic-card-container {
+  transform: translateX(-10px);
+}
