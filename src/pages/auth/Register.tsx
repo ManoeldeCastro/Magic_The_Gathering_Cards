@@ -88,7 +88,7 @@ export function Register() {
               <Input id="password" type="password" {...register('password')} />
             </div>
 
-            <Button disabled={isSubmitting} className="w-full" type="submit">
+            <Button disabled={isSubmitting} className="w-full my-2" type="submit">
               Cadastrar
             </Button>
           </form>
