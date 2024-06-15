@@ -64,23 +64,25 @@ export function CardInfo({
               {description}
             </DialogDescription>
           </DialogHeader>
-          {card && isAuthenticated && (
+          <div className='w-full flex gap-2'>
+            {card && isAuthenticated && (
+              <Button
+                type='button'
+                onClick={() => onRegisterCard && onRegisterCard([card.id])}
+                className='w-full mt-4'
+                disabled={isLoading}
+              >
+                Adquirir
+              </Button>
+            )}
             <Button
-              type='button'
-              onClick={() => onRegisterCard && onRegisterCard([card.id])}
+              variant='outline'
+              onClick={handleToggleTranslation}
               className='w-full mt-4'
-              disabled={isLoading}
             >
-              Adquirir
+              {isTranslated ? 'Mostrar Original' : 'Traduzir'}
             </Button>
-          )}
-          <Button
-            variant='outline'
-            onClick={handleToggleTranslation}
-            className='ml-4 mt-2'
-          >
-            {isTranslated ? 'Mostrar Original' : 'Traduzir'}
-          </Button>
+          </div>
         </div>
       </div>
     </DialogContent>
