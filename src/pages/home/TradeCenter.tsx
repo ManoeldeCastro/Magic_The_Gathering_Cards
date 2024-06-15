@@ -83,7 +83,7 @@ export function TradeCenter() {
             />
             {isAuthenticated && (
               <Button type='button' onClick={handleRequestTradeClick}>
-                Request Trade
+                Iniciar troca
               </Button>
             )}
           </div>
