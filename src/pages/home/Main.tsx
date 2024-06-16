@@ -37,7 +37,7 @@ export function Main() {
               Trocas em andamento
             </h1>
             <p className='text-base text-gray-600'>
-              Não fique de fora faça trocas e melhore seu deck
+              Não fique de fora, faça trocas e melhore seu deck
             </p>
             <Button variant='outline' asChild className='mt-7 text-base'>
               <Link to='/trade-center'>Ir para página de trocas</Link>
