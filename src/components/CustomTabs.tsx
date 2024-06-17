@@ -17,7 +17,7 @@ interface StyledTabsProps {
 
 export function CustomTabs({ tabs, defaultTab, children }: StyledTabsProps) {
   return (
-    <Tabs defaultValue={defaultTab} className='flex w-full gap-8'>
+    <Tabs defaultValue={defaultTab} className='flex w-full gap-8 py-4'>
       <TabsList asChild className='mt-2 h-fit'>
         <Card className='flex w-80 min-w-60 flex-col'>
           {tabs.map(tab => (

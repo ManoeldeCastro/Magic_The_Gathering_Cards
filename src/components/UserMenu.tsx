@@ -1,4 +1,10 @@
-import { CircleUserRound, LogOut, SquareUser } from 'lucide-react'
+import {
+  CircleUserRound,
+  LogOut,
+  Repeat,
+  SquareUser,
+  WalletCards
+} from 'lucide-react'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -57,6 +63,34 @@ export function UserMenu({ onLogout }: UserMenuProps) {
             >
               <CircleUserRound className='mr-2 h-4 w-4' />
               Perfil
+            </Link>
+          </Button>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Button
+            variant='ghost'
+            className='flex w-full items-center justify-start'
+          >
+            <Link
+              to={'/available-cards'}
+              className='flex w-full items-center justify-start'
+            >
+              <WalletCards className='mr-2 h-4 w-4' />
+              Suas cartas
+            </Link>
+          </Button>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild>
+          <Button
+            variant='ghost'
+            className='flex w-full items-center justify-start'
+          >
+            <Link
+              to={'/trade-center'}
+              className='flex w-full items-center justify-start'
+            >
+              <Repeat className='mr-2 h-4 w-4' />
+              Trocas
             </Link>
           </Button>
         </DropdownMenuItem>
