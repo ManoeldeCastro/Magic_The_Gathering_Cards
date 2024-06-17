@@ -67,23 +67,23 @@ export function AvailableCards() {
   return (
     <>
       <div className='mt-4 flex flex-col gap-8 px-10 rounded-md'>
-        <div className='mb-6'>
+        <div className='mb-6 text-center'>
           <h1 className='mb-3 text-3xl font-bold tracking-tight'>
             Cartas Disponíveis
           </h1>
-          <p className='text-base text-muted-foreground'>
+          <p className='text-2xl text-muted-foreground'>
             Veja todas as cartas disponíveis e comece suas trocas agora mesmo!
           </p>
         </div>
         <div className='flex w-full flex-col items-center'>
-          <div className='mb-8 flex w-full items-center justify-end'>
+          <div className='mb-8 mx-2 flex w-full items-center'>
             <ItemsPerPageFilter
               defaultValue='25'
               value={String(itemsPerPage)}
               handleChange={handleItemsPerPageChange}
             />
           </div>
-          <div className='mb-10 mt-6 flex w-full flex-wrap justify-center gap-x-8 gap-y-12'>
+          <div className='bg-gray-100 mb-10 mt-6 flex w-full flex-wrap justify-center gap-x-8 gap-y-12 py-2 rounded-md'>
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
               {registeredCards?.list.map((card: CardTypeResponse) => (
                 <Button

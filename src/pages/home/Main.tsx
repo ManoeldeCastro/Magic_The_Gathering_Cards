@@ -23,7 +23,7 @@ export function Main() {
           <h1 className='text-5xl font-bold tracking-tight'>
             Bem vindo ao Magic: The Gathering - Cards
           </h1>
-          <p className='ml-[3px] text-lg font-semibold tracking-tight text-muted-foreground'>
+          <p className='ml-[3px] text-2xl font-semibold tracking-tight text-muted-foreground'>
             Construa um deck invencível
           </p>
         </div>

@@ -66,16 +66,16 @@ export function TradeCenter() {
   return (
     <>
       <div className='mt-4 flex flex-col gap-8 px-10'>
-        <div className='mb-10'>
+        <div className='mb-10 text-center'>
           <h1 className='mb-3 text-3xl font-bold tracking-tight'>
             Trocas em andamento
           </h1>
-          <p className='text-base text-muted-foreground'>
+          <p className='text-2xl text-muted-foreground'>
             Veja todas as trocas abertas e inicie suas trocas agora!
           </p>
         </div>
         <div className='flex w-full flex-wrap justify-center'>
-          <div className='mb-8 flex w-full items-center justify-between'>
+          <div className='mb-10 flex w-full items-center justify-between mx-2'>
             <ItemsPerPageFilter
               defaultValue='10'
               value={String(itemsPerPage)}
@@ -87,7 +87,7 @@ export function TradeCenter() {
               </Button>
             )}
           </div>
-          <div className='mb-10 flex w-full flex-wrap justify-center gap-x-8 gap-y-12'>
+          <div className='bg-gray-100 mb-10 flex w-full flex-wrap justify-center gap-x-8 gap-y-12 py-2 rounded-md'>
             {openTrades &&
             openTrades.list.length > 0 &&
             !isLoadingOpenTrades ? (
@@ -99,7 +99,8 @@ export function TradeCenter() {
             ) : (
               <p className='col-span-full text-center'>
                 Nenhuma troca disponível
-              </p>)}
+              </p>
+            )}
           </div>
           <Pagination
             currentPage={currentPage}
