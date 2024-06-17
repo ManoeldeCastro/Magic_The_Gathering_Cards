@@ -90,7 +90,7 @@ export function Login() {
             <h1 className='text-2xl font-semibold tracking-tight'>
               Acessar sua conta
             </h1>
-            <p className='text-base text-muted-foreground'>
+            <p className='text-base font-bold text-muted-foreground'>
               Gerencie seu deck e faça suas trocas
             </p>
           </div>

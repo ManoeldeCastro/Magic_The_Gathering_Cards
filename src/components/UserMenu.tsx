@@ -76,7 +76,7 @@ export function UserMenu({ onLogout }: UserMenuProps) {
               className='flex w-full items-center justify-start'
             >
               <WalletCards className='mr-2 h-4 w-4' />
-              Suas cartas
+              Cartas disponíveis
             </Link>
           </Button>
         </DropdownMenuItem>

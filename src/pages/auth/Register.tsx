@@ -71,7 +71,7 @@ export function Register() {
             <h1 className='text-2xl font-semibold tracking-tight'>
               Crie sua conta
             </h1>
-            <p className='text-base text-muted-foreground'>
+            <p className='text-base font-bold text-muted-foreground'>
               Registre-se e comece a montar o seu deck
             </p>
           </div>

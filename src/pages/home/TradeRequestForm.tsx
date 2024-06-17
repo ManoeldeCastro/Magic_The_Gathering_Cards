@@ -133,6 +133,10 @@ export function TradeRequestForm() {
     loadMyCards()
   }, [loadMyCards])
 
+  const filteredRegisteredCards = registeredCards?.list.filter(
+    (card: { id: string }) => !offeredCards.some(offCard => offCard.cardId === card.id)
+  )
+
   return (
     <>
       <div className='mt-4 flex flex-col gap-6 px-10'>
@@ -260,7 +264,7 @@ export function TradeRequestForm() {
             <div className='w-full'>
               <div className='mt-6 flex w-full flex-wrap justify-start gap-x-8 gap-y-12'>
                 <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-                  {registeredCards?.list.map((card: CardTypeResponse) => (
+                  {filteredRegisteredCards?.map((card: CardTypeResponse) => (
                     <Card key={card.id} className='flex flex-col gap-10 p-5'>
                       <Button
                         variant='ghost'
