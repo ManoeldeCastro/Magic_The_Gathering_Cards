@@ -78,7 +78,7 @@ export function UserProfile() {
       <div className='mb-6 flex w-full items-start justify-between'>
         <div className='mb-6'>
           <h1 className='mb-3 text-3xl font-bold tracking-tight'>Perfil</h1>
-          <p className='text-base text-muted-foreground'>
+          <p className='text-1xl text-muted-foreground'>
             Gerencie todas as suas solicitações de troca abertas e aproveite seu
             deck!
           </p>

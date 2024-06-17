@@ -168,7 +168,7 @@ export function TradeRequestForm() {
               <h1 className='text-3xl font-bold tracking-tight'>
                 Criar Solicitação de Troca
               </h1>
-              <p className='text-sm'>
+              <p className='text-base'>
                 Selecione as cartas que você deseja <strong>oferecer</strong>
               </p>
               <span className='flex text-sm text-muted-foreground'>
